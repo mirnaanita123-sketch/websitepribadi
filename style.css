@@ -1,0 +1,67 @@
+body {
+  font-family: Arial;
+  background: #194072;
+  margin: 0;
+}
+
+header {
+  background:pink;
+  padding: 15px;
+  font-size: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+
+/* PROFILE */
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  background: #2aa889;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* PROGRESS */
+.bar {
+  background: #ddd;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.bar div {
+  height: 10px;
+  background: #2aa889;
+  border-radius: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
